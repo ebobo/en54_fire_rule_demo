@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.house {
+  margin-top: 10px;
+  max-width: 1050px;
+  overflow: auto;
+  width: 70vw;
+  height: 795px;
+  border: 3px solid rgb(124, 128, 131);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.row75 {
+  width: 75%;
+  height: 100%;
+  position: relative;
+}
+.row25 {
+  width: 25%;
+  height: 100%;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+  pointer-events: none;
+}
+
+.canteen {
+  height: 80%;
+  border: 2px solid rgb(93, 95, 97);
+}
+
+.kitchen {
+  height: 20%;
+  border: 2px solid rgb(93, 95, 97);
+}
+
+.reception {
+  height: 30%;
+  border: 2px solid rgb(93, 95, 97);
+}
+
+.security {
+  height: 40%;
+  border: 2px solid rgb(93, 95, 97);
+}
+
+.office {
+  height: 30%;
+  border: 2px solid rgb(93, 95, 97);
+}
+
+.detector {
+  position: absolute;
+  height: 45px;
+  width: 68px;
+  pointer-events: visible;
+  display: flex;
+  flex-direction: row;
+}
+
+.detector-image {
+  flex-grow: 1;
+}
+
+.detector-led {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+}
+
+.detector-Quiescent {
+  background-color: limegreen;
+}
+.detector-PreAlarm {
+  background-color: orange;
+}
+.detector-Alarm {
+  background-color: red;
+}
+
+.sounder {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  pointer-events: visible;
+}
+
+.bell {
+  position: absolute;
+  height: 58px;
+  width: 75px;
+  pointer-events: visible;
+}
+
+.mcp {
+  position: absolute;
+  height: 45px;
+  width: 58px;
+  pointer-events: visible;
+}
+
+.dz {
+  top: 35px;
+  left: 15px;
+  right: 15px;
+  bottom: 32px;
+  pointer-events: visible;
+  position: absolute;
+  border: 3px solid #2177c7;
+}
+
+.dz-Quiescent {
+  background-color: rgb(0, 255, 0, 0.2);
+}
+
+.dz-PreAlarm {
+  background-color: rgb(255, 165, 0, 0.3);
+}
+
+.dz-Alarm {
+  /* border: 3px solid red; */
+  background-color: rgb(255, 0, 0, 0.4);
+}
+
+.az {
+  position: absolute;
+  top: 25px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 3px solid rgb(228, 88, 78);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: visible;
+}
+
+.az-Activated {
+  animation: blinkingBackground 1s infinite;
+}
+
+@keyframes blinkingBackground {
+  0% {
+    background-color: rgb(255, 0, 0, 0.8);
+  }
+  100% {
+    background-color: rgb(255, 0, 0, 0.4);
+  }
+}
+
+.az-Non-Activated {
+  background-color: rgba(0, 115, 0, 0.2);
+}
+
+.oz {
+  flex-grow: 1;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 3px solid rgb(175, 15, 212);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  pointer-events: visible;
+}
+
+.label {
+  align-self: center;
+}
+
+.roomLabel {
+  color: gray;
+}
+
+.dzLabel {
+  color: rgb(33, 119, 199);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 2px;
+}
+
+.azLabel {
+  color: rgb(228, 88, 78);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: -4px;
+}
+
+.ozLabel {
+  color: rgb(175, 15, 212);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: -4px;
+}
+
+.room-icon {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+}
+
+.as-icon {
+  position: absolute;
+  height: 65px;
+  width: 86px;
+  bottom: 20%;
+  left: 40%;
+}

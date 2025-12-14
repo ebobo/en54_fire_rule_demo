@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vw;
+}
+
+.house-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 1050px;
+}

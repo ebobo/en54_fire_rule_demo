@@ -1,0 +1,35 @@
+.dropdown-container {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 28px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.dropdown-label {
+  color: rgb(84, 87, 94);
+  font-size: smaller;
+  width: 60px;
+  height: 28px;
+  word-wrap: normal;
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.dropdown-select {
+  height: 25px;
+  background-color: lightgray;
+  border-color: darkgrey;
+  color: #2196f3;
+  width: 120px;
+}
+
+.dropdown-option {
+  color: #2196f3;
+}
